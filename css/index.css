@@ -1,6 +1,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	/*font-size: 60%;*/
+    margin: 0px; 
+    padding: 0px; 
 }
 
 #nav-list li{
@@ -106,12 +108,12 @@ p{
     background: #379fd3;
 }
 
-.slide-cont
+.skolzit
 {
     padding-left: 10px;
     margin-left: 19.5%;
 }
-.slide-btn
+.skolzit-k
 {
     display: inline-block;
     background-color: #E5E5E5;
@@ -125,17 +127,17 @@ p{
 {
     background-color: #3399CE;
 }
-.slide-num{
+.skolzit-n{
 	display: none;
 }
-    .sticker-list
-    {
-        position: relative;
-        padding: 0;
-        margin: 0 auto;
-        margin-left: 20%;
-    }
-    .sticker
+.list-parts
+{
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+.part
 {
     position: relative;
     font-size: 20px;
@@ -153,7 +155,7 @@ p{
     cursor: pointer;
     vertical-align: top;
 }
-.sticker a
+.part a
 {
     position: absolute;
     color: white;
@@ -163,7 +165,7 @@ p{
     bottom: 12px;
 }
 
-.pinkBg a:before
+.pink a:before
 {
     position: relative;
     content: url('../source/img/link-icon.png');
@@ -171,46 +173,46 @@ p{
     right: 5px;
 }
 
-.greenBg a:before
+.green a:before
 {
     position: relative;
     content: url('../source/img/file-icon.png');
     top: 9px;
     right: 5px;
 }
-.orangeBg a:before
+.orange a:before
 {
     position: relative;
     content: url('../source/img/play-icon.png');
     top: 9px;
     right: 5px;
 }
-.pinkBg
+.pink
 {
     background:rgba(244, 34, 139, 0.8);
 }
 
-.pinkBg:hover
+.pink:hover
 {
     background:rgb(244, 34, 139);
 }
 
-.greenBg
+.green
 {
     background:rgba(72, 196, 5, 0.8);
 }
 
-.greenBg:hover
+.green:hover
 {
     background:rgb(72, 196, 5);
 }
 
-.orangeBg
+.orange
 {
     background:rgba(255, 102, 0, 0.8);
 }
 
-.orangeBg:hover
+.orange:hover
 {
     background:rgb(255, 102, 0);
 }
