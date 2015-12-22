@@ -462,8 +462,8 @@ p{
     margin-right: 0px;
     position: relative;
     text-align: center;
-    vertical-align: top;
-    margin-bottom: 30px;
+    /*vertical-align: top;
+    margin-bottom: 30px;*/
 }
 .we-do a
 {
@@ -533,4 +533,16 @@ p{
 .social:hover
 {
     content: url('../source/img/social-icon.png');
+}
+.we-do h2
+{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.box
+{
+    position: relative;
+    margin-bottom: 105px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
