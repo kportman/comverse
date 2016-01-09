@@ -59,7 +59,7 @@ select{
 }
 
 .my-main{
-    background-image: url(../source/img/slide-bg-complexity.jpg);
+    background: url(../source/img/slide-bg-complexity.jpg) 50% no-repeat fixed;
     display: block;
     background-position: center 0px;
     padding-bottom: 20px;
@@ -491,7 +491,8 @@ p{
 
 .data-monit:hover
 {
-    content: url('../source/img/data-monetization.png');
+    content: url('../source/img/data-monetization-hover.png');
+    
 }
 .robot
 {
@@ -546,3 +547,21 @@ p{
     margin-right: 20px;
     margin-left: 20px;
 }
+.news-events {
+    background: url('../source/img/news-and-events-bg.jpg') 50% no-repeat fixed;
+    background-size: cover;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    height: 420px;
+    box-shadow: none;
+}
+
+.news-events h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news-item-details, .events-item-details {
+    background: rgba(219, 213, 206, 0.4);
+}
+
