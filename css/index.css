@@ -450,6 +450,7 @@ p{
     margin: 0 auto;
 }
 .we-do{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-image: url('../source/img/services-bg.png');
     width: 100%;
     padding-top: 11px;
@@ -547,21 +548,116 @@ p{
     margin-right: 20px;
     margin-left: 20px;
 }
-.news-events {
-    background: url('../source/img/news-and-events-bg.jpg') 50% no-repeat fixed;
+
+.newsAndEvents {
+    background: url(../source/img/news-and-events-bg.jpg) 50% no-repeat fixed;
     background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
     height: 420px;
-    box-shadow: none;
-}
-
-.news-events h1{
-    text-align: center;
+    padding-top: 0.1px;
     text-transform: uppercase;
 }
 
-.news-item-details, .events-item-details {
-    background: rgba(219, 213, 206, 0.4);
+.newsAndEvents h2{
+    text-align: center;
+}
+
+.newsAndEventsContainer{
+    display: inline-block;
+    float: left;
+    font-size: 2em;
+    margin-top: 30px;
+}
+.lead{
+    color: black;
+}
+
+.NewsAndEventsItem{
+    float: left;
+    margin-right: 25px;
+    padding: 0;
+    font-size: 0.5em;
+}
+
+.NewsAndEventsItemDetails {
+    background: rgba(220, 210, 205, 0.5);
+    width: 296px;
+    height: 120px;
+    border-radius: 3px;
+}
+
+.NewsAndEventsItemDetails:hover {
+    background: rgba(220, 210, 205, 0.8);
+    cursor: pointer;
+}
+
+.NewsAndEventsItemDetails p{
+    color: black;
+    padding: 10px;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.date {
+    float: left;
+    width: 70px;
+    height: 100px;
+    background: rgb(50, 150, 200);
+    border-radius: 1px;
+    margin: 10px;
+    box-shadow: 0 1px 4px 0 grey;
+}
+
+.day {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom: 1px dotted;
+}
+
+.month {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.calendar {
+    text-transform: capitalize;
+    list-style-image: url(../source/img/eventListIconEvents.png);
+    margin: 5px 30px 0;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.calendar:hover {
+    list-style-image: url(../source/img/eventListIconEvents_hover.png);
+    color: black;
+}
+
+.paper {
+    list-style-image: url(../source/img/eventListIconNews.png);
+    margin: 5px 30px 0;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.paper:hover {
+    list-style-image: url(../source/img/eventListIconNews_hover.png);
+    color: black;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 6em 0 6em;
+}
+.bigFont
+{
+    font-size: 170%;
+}
+.newsHeader
+{
+    margin-top: 3%;
 }
 
