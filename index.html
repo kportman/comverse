@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comverse</title>
 	<link href="css/index.css" rel='stylesheet' type='text/css'/>
 
 </head>
 <body>
-	<header>
+	<header class="wrap">
 		<ul id="nav-list">
-			<img id="comverse" src="./source/img/comverse-logo-medium.png" alt="Comverse logo">
-			<li><a href="">YOUR NEEDS</a></li><img src="./source/img/divider.png">		
-			<li><a href="">OUR PORTFOLIO</a></li><img src="./source/img/divider.png">
-			<li><a href="">NEWS &amp; MEDIA</a></li><img src="./source/img/divider.png">
-			<li><a href="">ABOUT COMVERSE</a></li>
+            <div class="move">
+    			<img id="comverse" src="./source/img/comverse-logo.png" alt="Comverse logo">
+    			<li><a href="">YOUR NEEDS</a></li><img src="./source/img/divider.png">		
+    			<li><a href="">OUR PORTFOLIO</a></li><img src="./source/img/divider.png">
+    			<li><a href="">NEWS &amp; MEDIA</a></li><img src="./source/img/divider.png">
+    			<li><a href="">ABOUT COMVERSE</a></li>
+            </div>
 			<li>
-				<div class="inline">
+				<div class="inline pos">
 					<p class="lang">
 						<select>
 							<option value="English"><a href="">EN</a></option>
 							<option value="Hebrew"><a href="">HE</a></option>
 						</select>
 						<img src="./source/img/divider.png">
-					 <a href="#" class="inline" id="custLog">Customer <br>Login</a>
+					    <a href="#" class="inline custLog">Customer Login</a>
 					</p>
 					<p class="srch">
-						<input id="query" type="text">
+						<input class="query" type="text">
 						<a href="#"><img id="searchImg" src="./source/img/searchBtn.png" alt="Search"></a>
 					</p>	
 					
@@ -36,7 +39,7 @@
 
 	    <article>
            <main class="my-main">
-               <div class="emsta">
+               <div class="wrap">
                     <div class="obolochka">
                         <h2><b>Free</b> Your Markets From<br> IT <b>Complexity</b></h2>
                         <p>Comverse Policy Studio</p>
@@ -50,17 +53,17 @@
                         <li class="skolzit-k"><a class="skolzit-n">4</a></li>
                     </ul>
 
-                    <ul class="list-parts emtsa">
+                    <ul class="list-parts ">
                         <li class="part pink">
-                            <p>Comverse Is Value-Added Service Global Market Leader.</p>
+                            <div class="white">Comverse Is Value-Added Service Global Market Leader.</div>
                             <a href="">Read more</a>
                         </li>
                         <li class="part green">
-                            <p>Managed Services World Congress September 18-19 Berlin, Germany</p>
+                            <div class="white">Managed Services World Congress September 18-19 Berlin, Germany</div>
                             <a href="">Read More</a>
                         </li>
                         <li class="part orange">
-                            <p>Comverse: Enabling a world of Connected Possibilities</p>
+                            <div class="white">Comverse: Enabling a world of Connected Possibilities</div>
                             <a href="">Watch Now</a>
                         </li>
                     </ul>
@@ -77,7 +80,9 @@
                     </li>
                     <li class="box">
                         <a href="">
-                            <p class="robot center"></p>
+                            <p class="robot center">
+                                <img src="./source/img/robot-icon.png" alt="robot">
+                            </p>
                         	<span>Machine to machine</span><span>(M2M)</span>
                         </a>
                     </li>
@@ -110,7 +115,7 @@
             </section>
 
     <section class="newsAndEvents">
-        <div class>
+        <div class="wrap">
             <h2 class="newsHeader center">What's happening at comverse?</h2>
             <div class="newsAndEventsContainer">
                 <ul>
@@ -125,8 +130,8 @@
                             </p>
                         </div>
                         <div>
-                            <ul class="calendar">
-                                <li>All news</li>
+                            <ul class="calendar magazine">
+                                <li>All News</li>
                             </ul>
                         </div>
                     </li>
@@ -142,11 +147,11 @@
                         </div>
                         <div>
                             <ul class="calendar">
-                                <li>All events</li>
+                                <li>All Events</li>
                             </ul>
                         </div>
                     </li>
-                    <li class="NewsAndEventsItem"><span class="bigFont">PRESS RELEASES</span>
+                    <li class="NewsAndEventsItem"><span class=" invisible bigFont">PRESS RELEASES</span>
                         <div class="NewsAndEventsItemDetails">
                             <div class="date">
                                 <div class="day">04</div>
@@ -158,7 +163,7 @@
                         </div>
                         <div>
                             <ul class="calendar">
-                                <li>All events</li>
+                                <li>All Events</li>
                             </ul>
                         </div>
                     </li>
@@ -167,6 +172,82 @@
         </div>
     </section>
 
-         <article>
+
+   <section class="success">
+        <div class="wrap">
+            <h2 class="successHeader">SUCCESS STORIES</h2>
+            <div class="line">
+                <div class="boxOfSuccess">
+                    <div class="story">
+                        <img src="./source/img/person2.png" alt="Sergey Korotych"/>
+                        <p class="bigBox">
+                            <img src="./source/img/quote-grey.png" alt="quotation-mark">
+                            <div class="black">We have very good and very warm relations with Comverse. We always achievet...</div>
+                        </p>
+                    </div>
+                    <div class="person">
+                        <img src="./source/img/3mob.png" alt="3Mob icon">
+                        <h3>SERGEY KOROTYCH</h3>
+                        <p class="black">Deputy CTO, 3 Mob Ukraine</p>
+                    </div>
+                </div>
+                <ul class="logos">
+                    <li class="cycle logo"></li>
+                    <li class="bull logo"></li>
+                    <li class="gemplus logo"></li>
+                </ul>
+            </div>
+            <div class="line">
+                <ul class="logos">
+                    <li class="mtc logo"></li>
+                    <li class="cable logo"></li>
+                    <li class="trilogy logo"></li>
+                </ul>
+                <div class="boxOfSuccess">
+                    <div class="story">
+                        <img src="./source/img/person1.png" alt="Adale Kehasan">
+                        <p class="littleBox">
+                            <div class="black smallFont">Comverse has demonstrated that they are partners, not just suppliers, because they understand our needs, our situations; together we are...</div>
+                        </p>
+                    </div>
+                    <div class="person">
+                        <img src="./source/img/multilinks.png" alt="Multi links">
+                        <h3>ADALE KEHASAN</h3>
+                        <p class="black">CIO of Multi-links</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line anLine">
+                <div class="boxOfSuccess">
+                    <div class="story">
+                        <p class="bigBox">
+                            <img src="./source/img/quote-grey.png" alt="quote icon">
+                            <div class="black">Comverse has been able to fully deliver what we want and we have peers...</div>
+                        </p>
+                    </div>
+                    <div class="person">
+                        <img src="./source/img/tatasky.png" alt="tatasky">
+                        <h3>RAVISHANKER</h3>
+                        <p class="black">Tata Sky CIO N.</p>
+                    </div>
+                </div>
+                <ul class="logos">
+                    <li class="hp logo"></li>
+                    <li class="atos logo"></li>
+                </ul>
+            </div>
+            <button class="knopka2">All 256 Success Stories</button>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap">
+            
+        </div>
+        
+    </footer>
+
+
+    <article>
 </body>
 </html> 

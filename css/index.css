@@ -3,11 +3,20 @@ body {
     /*font-size: 60%;*/
     margin: 0px; 
     padding: 0px; 
+    /*no horizontal scrolling*/
+    /*width: 100%;
+    /*overflow-x: hidden;*/
+    margin: 0;
+    height: 100%
+    max-width: 100%;
+
+    
 }
 
 #nav-list li{
     display: inline;
     margin: 1%;
+    font-size: 80%;
     
 }
 .inline{
@@ -23,9 +32,9 @@ a{
     text-decoration: none;
 }
 
-#query{
+.query{
     border-width: 1px;
-    width: 50%;
+    width: 60%;
     border: 1px solid #D0D0D0; 
     border-right: none;
     border-top-left-radius: 5px;
@@ -34,7 +43,7 @@ a{
     height: 1.1rem;
     padding: .1rem .5rem;
 }
-#searchImg{
+.searchImg{
     border-width: 1px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -43,7 +52,8 @@ a{
     display: block;
     padding: .1rem .5rem;
     margin-top: 1rem;
-    height: 1.1rem;
+    height: 0.7rem;
+    width: 0.9rem;
 }
 select{
     border:transparent;
@@ -52,18 +62,9 @@ select{
     text-align: left;
     margin-bottom: 1.3rem;
 }
-#custLog{
-    width: 50%;
+.custLog{
     margin-top: .1rem;
     color: black;
-}
-
-.my-main{
-    background: url(../source/img/slide-bg-complexity.jpg) 50% no-repeat fixed;
-    display: block;
-    background-position: center 0px;
-    padding-bottom: 20px;
-
 }
 
 h2{
@@ -93,6 +94,20 @@ p{
     padding-right: 15px;
     width: 10%;
     margin-left: 20%;
+}
+.knopka2{
+    
+    background: url(../source/img/btnArrow.png) right 15px center no-repeat,  #2793C9;
+    height: 36px;
+    width: 180px;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 1px 3px 0 grey;
+    cursor: pointer;
+    margin-top: 3%;
 }
 
 .knopka:after
@@ -137,6 +152,7 @@ p{
     padding: 0;
     margin: 0 auto;
     margin-left: 20%;
+    /*need to center*/
 }
 .part
 {
@@ -222,22 +238,22 @@ p{
     padding-top: 15px;
 }
  
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    /*font-size: 60%;*/
-    margin: 0px; 
-    padding: 0px; 
-}
-
 #nav-list li{
     display: inline;
     margin: 1%;
     
 }
 .inline{
-    display: inline-block;
+    display: inline-block; 
+}
+.move{
+    display: inline;
     position: relative;
+    top: 55px;
+}
+.pos{
+    position: relative;
+    top: 15px;
 }
 #nav-list{
     /*position: relative;*/
@@ -284,10 +300,12 @@ select{
 }
 
 .my-main{
-    background-image: url(../source/img/slide-bg-complexity.jpg);
     display: block;
     background-position: center 0px;
     padding-bottom: 20px;
+    background: url(../source/img/slide-bg-complexity.png) 50% no-repeat fixed;
+    background-position: center 0px;
+    background-size: cover;
 }
 
 h2{
@@ -447,7 +465,7 @@ p{
 }
 .center{
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
 }
 .we-do{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -463,8 +481,6 @@ p{
     margin-right: 0px;
     position: relative;
     text-align: center;
-    /*vertical-align: top;
-    margin-bottom: 30px;*/
 }
 .we-do a
 {
@@ -492,16 +508,17 @@ p{
 
 .data-monit:hover
 {
-    content: url('../source/img/data-monetization-hover.png');
+    content: white url('../source/img/data-monetization-hover.png');
     
 }
 .robot
 {
-    content: url('../source/img/robot-icon.png');
+   /* content: url('../source/img/robot-icon.png');*/
 }
-.robot:hover
+.robot img:hover
 {
-    content: url('../source/img/robot-icon.png');
+    
+    -webkit-filter: grayscale(0.3) hue-rotate(210deg);;
 }
 .flag
 {
@@ -509,7 +526,7 @@ p{
 }
 .flag:hover
 {
-    content: url('../source/img/flag-icon.png');
+    content: white  url('../source/img/flag-icon.png');
 }
 .cloud
 {
@@ -518,7 +535,7 @@ p{
 }
 .cloud:hover
 {
-    content: url('../source/img/cloud-icon.png');
+    content: white url('../source/img/cloud-icon.png');
 }
 .manage
 {
@@ -526,7 +543,7 @@ p{
 }
 .manage:hover
 {
-    content: url('../source/img/managed-services.png');
+    content: white url('../source/img/managed-services.png');
 }
 .social
 {
@@ -534,7 +551,8 @@ p{
 }
 .social:hover
 {
-    content: url('../source/img/social-icon.png');
+    content: white url('../source/img/social-icon.png');
+    color: blue;
 }
 .we-do h2
 {
@@ -551,12 +569,13 @@ p{
 
 .newsAndEvents {
     background: url(../source/img/news-and-events-bg.jpg) 50% no-repeat fixed;
-    background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
     height: 420px;
     padding-top: 0.1px;
     text-transform: uppercase;
+    background-size: cover;
+    padding-bottom: 25px;
 }
 
 .newsAndEvents h2{
@@ -567,7 +586,9 @@ p{
     display: inline-block;
     float: left;
     font-size: 2em;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+    /*need to center*/
+
 }
 .lead{
     color: black;
@@ -624,40 +645,216 @@ p{
 }
 
 .calendar {
-    text-transform: capitalize;
     list-style-image: url(../source/img/eventListIconEvents.png);
     margin: 5px 30px 0;
     font-size: 0.8em;
     display: inline-block;
+    text-transform: capitalize;
 }
+.magazine
+{
+    list-style-image: url(../source/img/eventListIconNews.png);
 
+}
 .calendar:hover {
     list-style-image: url(../source/img/eventListIconEvents_hover.png);
-    color: black;
+    color: grey;
+    cursor: pointer;
 }
-
-.paper {
-    list-style-image: url(../source/img/eventListIconNews.png);
-    margin: 5px 30px 0;
-    font-size: 0.8em;
-    display: inline-block;
-}
-
-.paper:hover {
+.magazine:hover {
     list-style-image: url(../source/img/eventListIconNews_hover.png);
-    color: black;
+    color: grey;
+    cursor: pointer;
 }
 ul {
     padding: 0;
     list-style-type: none;
-    margin: 0 6em 0 6em;
+    /*margin: 0 6em 0 6em;*/
 }
 .bigFont
 {
     font-size: 170%;
 }
+.smallFont{
+    font-size: 90%;
+}
 .newsHeader
 {
     margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
 }
+.successHeader
+{
+    color: rgb(80, 80, 80);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.invisible
+{
+    visibility: hidden;
+}
+.success{
+    background: rgb(230, 230, 230);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 600px;
+    padding-top: 0.1px;
+    color: black; 
+    text-align: center;
+}
+
+.line{
+    float: left;
+    width: 350px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.anLine {
+    width: 230px;
+    margin-right: 0;
+}
+
+.boxOfSuccess{
+    background: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
+    width: auto;
+    height: 175px;
+}
+
+.story{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    height: 8em;
+}
+
+.story p{
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    margin: 0;
+}
+
+.story img{
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.person h3{
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #4fadde;
+    margin: 5px 0 0 0;
+}
+
+.person p{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+    min-width: 10em
+}
+
+.person img{
+    float: right;
+    height: 1.9em;
+    margin: 5px 0 0 0;
+    -webkit-filter: grayscale(100%);
+}
+
+.logos{
+    list-style-type: none;
+    margin: 0 0 2px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.logo:last-child{
+    margin: 0;
+}
+
+.logos > li{
+    display: inline-block;
+    width: 110px;
+    height: 100px;
+    border-radius: 2px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.bigBox{
+    width: 11em;
+    font-size: 1em;
+}
+.littleBox{
+    font-size: 0.8em;
+    width: 13em;
+}
+
+.logo{
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+}
+.cycle{
+    background: white url("../source/img/cycle30.png") center center no-repeat;
+}
+
+.bull{
+    background: white url("../source/img/bull.png") center center no-repeat;
+}
+
+.gemplus{
+    background: white url("../source/img/gemplus.png") center center no-repeat;
+}
+
+.mtc{
+    background: white url("../source/img/mtc.png") center center no-repeat;
+}
+
+.cable{
+    background: white url("../source/img/cable&wireless.png") center center no-repeat;
+}
+
+.trilogy{
+    background: white url("../source/img/trilogy.png") center center no-repeat;
+}
+
+.tatasky{
+    background: white url("../source/img/tatasky.png") center center no-repeat;
+}
+
+.hp{
+    background: white url("../source/img/hp.png") center center no-repeat;
+}
+
+.atos{
+    background: white url("../source/img/atos.png") center center no-repeat;
+}
+.black{
+   color: rgb(80, 80, 80);
+}
+.footer{
+    background-image: url('../source/img/footer-bg.png');
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 600px;
+    padding-top: 0.1px;
+    color: black; 
+    text-align: center;
+}
+.white{
+    color: white;
+    padding-top: 7px;
+}
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 1px 0;
+    position: relative;
+}
+.width1300{
+    width:1300px;
+}
+
 
