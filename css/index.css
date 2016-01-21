@@ -3,20 +3,18 @@ body {
     /*font-size: 60%;*/
     margin: 0px; 
     padding: 0px; 
-    /*no horizontal scrolling*/
-    /*width: 100%;
-    /*overflow-x: hidden;*/
+   /* width: 100%;*/
+    overflow-x: hidden;
     margin: 0;
-    height: 100%
-    max-width: 100%;
-
-    
+    height: 100%;
+    max-width: 100%; 
 }
 
 #nav-list li{
     display: inline;
     margin: 1%;
     font-size: 80%;
+    width: 100%;
     
 }
 .inline{
@@ -84,6 +82,7 @@ p{
 
 .knopka
 {
+    position: relative;
     display: block;
     background: #2793C9;
     color: white;
@@ -95,8 +94,11 @@ p{
     width: 10%;
     margin-left: 20%;
 }
+.greb{
+    height: 50px;
+}
 .knopka2{
-    
+    position: relative;
     background: url(../source/img/btnArrow.png) right 15px center no-repeat,  #2793C9;
     height: 36px;
     width: 180px;
@@ -105,9 +107,11 @@ p{
     text-align: left;
     border-radius: 6px;
     color: white;
-    box-shadow: 0 1px 3px 0 grey;
     cursor: pointer;
     margin-top: 3%;
+    display: block;
+    top: 350px;
+    
 }
 
 .knopka:after
@@ -143,7 +147,7 @@ p{
 {
     background-color: #3399CE;
 }
-.skolzit-n{
+.skolzit-n, .copyrightMob{
     display: none;
 }
 .list-parts
@@ -255,10 +259,6 @@ p{
     position: relative;
     top: 15px;
 }
-#nav-list{
-    /*position: relative;*/
-    text-align: center;
-}
 a{
     color:inherit;
     text-decoration: none;
@@ -304,7 +304,6 @@ select{
     background-position: center 0px;
     padding-bottom: 20px;
     background: url(../source/img/slide-bg-complexity.png) 50% no-repeat fixed;
-    background-position: center 0px;
     background-size: cover;
 }
 
@@ -500,6 +499,7 @@ p{
     display: block;
     position: relative;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 .data-monit
 {
@@ -562,19 +562,22 @@ p{
 .box
 {
     position: relative;
-    margin-bottom: 105px;
+    margin-bottom: 90px;
     margin-right: 20px;
     margin-left: 20px;
 }
-
+.length{
+    position: relative;
+    width: 200px;
+}
 .newsAndEvents {
-    background: url(../source/img/news-and-events-bg.jpg) 50% no-repeat fixed;
+    background: url(../source/img/news-and-events-bg.png) 50% no-repeat fixed;
+    background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: white;
-    height: 420px;
+    height: 25em;
     padding-top: 0.1px;
     text-transform: uppercase;
-    background-size: cover;
     padding-bottom: 25px;
 }
 
@@ -696,6 +699,8 @@ ul {
 }
 .success{
     background: rgb(230, 230, 230);
+    background-size: cover;
+    -webkit-background-origin:border;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     height: 600px;
     padding-top: 0.1px;
@@ -710,11 +715,6 @@ ul {
     text-align: left;
 }
 
-.anLine {
-    width: 230px;
-    margin-right: 0;
-}
-
 .boxOfSuccess{
     background: rgb(255, 255, 255);
     padding: 18px;
@@ -722,6 +722,21 @@ ul {
     margin: 0 0 10px 0;
     width: auto;
     height: 175px;
+    cursor: pointer;
+}
+.logo:hover{
+    background: url(../source/img/logos_generic_2nd_side_cut_02_w108px_x_h95px.png);
+    padding: 0px;
+    -webkit-filter: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s; 
+    cursor: pointer;
+}
+.anLine {
+    width: 230px;
+    margin-right: 0;
 }
 
 .story{
@@ -734,12 +749,6 @@ ul {
     overflow: hidden;
     float: left;
     margin: 0;
-}
-
-.story img{
-    float: left;
-    display: inline-block;
-    margin-right: 10px;
 }
 
 .person h3{
@@ -755,14 +764,17 @@ ul {
     margin: 0;
     min-width: 10em
 }
-
+.story img{
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
 .person img{
     float: right;
     height: 1.9em;
     margin: 5px 0 0 0;
     -webkit-filter: grayscale(100%);
 }
-
 .logos{
     list-style-type: none;
     margin: 0 0 2px 0;
@@ -834,7 +846,7 @@ ul {
 .black{
    color: rgb(80, 80, 80);
 }
-.footer{
+.footer2{
     background-image: url('../source/img/footer-bg.png');
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     height: 600px;
@@ -848,13 +860,376 @@ ul {
 }
 
 .wrap{
-    width: 100%;
+    width: 980px;
+    margin: 0 auto;
+    padding: 10px 0 1px 0;
+    position: relative;
+    margin:  ;
+}
+.width1000{
+    /*how to center the elements*/
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 1800px;*/
+}
+.main-wrap{
+    width: 1200px;
     margin: 0 auto;
     padding: 10px 0 1px 0;
     position: relative;
 }
-.width1300{
-    width:1300px;
+
+.HeaderMobile
+{
+    display: none;
+}
+footer {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.8em;
+    color: #dbdbdb;
+    background: url('../source/img/footer-bg.png');
+    height: 365px;
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #dbdbdb;
+}
+
+.divs {
+    float: left;
+}
+
+.footerDiv {
+    float: left;
+    margin-right: 60px;
+}
+
+.footerHead {
+    line-height: 50px;
+    font-size: 1em;
+}
+
+.posts {
+    float: right;
+    width: 260px;
+    height: 320px;
+    background: rgba(221, 211, 203, 0.15);
+    color: white;
+}
+
+.posts h1 {
+    color: #4ea7d3;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.blogs{
+    border-bottom: 1px solid rgb(106, 106, 106);
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.fPar {
+    padding-top: 15px;
+}
+
+.fDate {
+    float: left;
+    margin-right: 20px;
+}
+
+.fDay {
+    font-weight: bolder;
+    font-size: 2.5em;
+    padding-bottom: 0;
+}
+
+.fMonth {
+    font-size: 1.6em;
+    text-align: center;
+    padding-top: 0;
+}
+
+.sign {
+    margin: 22px;
+}
+.subscribe {
+    border-radius: 2px;
+    outline: none;
+    
+}
+.email {    
+    height: 26px;
+    margin: 0;
+    margin-right: 0px;
+    padding: 0 0 0 6px;
+    border: none;
+    border-radius: 1px;
+    width: 66%;
+}
+
+.socialList {
+    margin-top: 35px;
+}
+
+.regItem {
+    float: left;
+    margin-right: 10px;
+}
+
+.youtube:hover {
+    content: url(../source/img/socialMenuIcon-youtube_hover.png);
+}
+
+.twitter:hover {
+    content: url(../source/img/socialMenuIcon-twitter_hover.png);
+}
+
+.linkedin:hover {
+    content: url(../source/img/socialMenuIcon-linkedin_hover.png);
+}
+
+.footerMobile {
+    display: none;
+}
+
+.signUp {
+    background: linear-gradient(to bottom, #40a5d6 , #2a92c5);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 26px;
+    width: 30%;
+    float: right;
+    padding: 0;
+    margin-left: 0px;
+}
+.copyright {
+    display: block;
+    clear: left;
+    padding-top: 65px;
+    color: rgb(113, 113, 113);
+    text-align: left;
+}
+
+
+.copyright a:visited {
+    color: rgb(113, 113, 113);
+}
+
+.searchMobile {
+    position: relative;
+    border: 1px solid #d2d2d8;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+}
+.srchInput {
+    width: 130px;
+    height: 30px;
+    border: none;
+    margin: 0 3px 0 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (max-width: 850px) {
+    .pink, .green, .orange, .box, .NewsAndEventsItem, .line,
+    {
+        width: 100%;
+    }
+    .wrap {
+        width: 100%;
+    }
+     .main-wrap {
+        width: 100%;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+    #mobileSearch
+    {
+        display: none;
+    }
+    .success
+    {
+        height: 1300px;
+    }
+    .newsAndEvents
+    {
+        height: 800px;
+    }
+
+    #srchMob {
+        background: rgb(240, 240, 240);
+        display: inline-block;
+        width: 32px;
+        height: 30px;
+        border-radius: 4px;
+        padding: 8px 3px 0 3px;
+        border: 1px solid grey;
+        float: right;
+        margin-right: 10px;
+        position: relative;
+    }
+    #mobileSearch:checked ~ .searchMobile {
+        display: inline-block;
+        position: absolute;
+        background: white;
+        margin: 0 0 0 -140px;
+        height: 35px;
+        width: 180px;
+    }
+    #menuForMob {
+        display: none;
+    }
+    .searchMobile {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+        background: rgb(235, 235, 235);
+        display: inline-block;
+        width: 30px;
+        height: 25px;
+        padding: 10px 5px 5px 11px;
+        border-radius: 4px;
+        border: 1px solid grey;
+        float: left;
+        margin-left: 10px;
+        position: relative;
+    }
+
+    #menuForMob:checked ~ .mobList {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        background-color: white;
+    }
+
+    .mobList {
+        display: none;
+    }
+
+    .mobileMenu:focus + .mobList{
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #buttonRadiusMobile
+    {
+        color: rgb(220,220,220);
+        border-width: 1px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;    
+        padding: 0.3rem 0.4rem;
+        height: 1rem
+    }
+    .navListMob a
+    {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid grey;
+    }
+    .navListMob:last-child a
+    {
+        border-bottom: 1px solid grey;
+        padding: 4px 4px 4px 4px;
+        margin-bottom: 0;
+    }
+    .comverseLogo 
+    {
+        height: 36px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: 35px;
+        margin-right: auto;
+    }
+
+    footer {
+        height: 200px;
+    }
+    
+    .divs, .posts {
+        display: none;
+    }
+
+    .footerMobile {
+        display: block;
+    }
+    .HeaderMobile
+    {
+        display: block;
+    }
+    #nav-list{
+     display: none;
+    }
+    .fList {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .fItem {
+        padding: 12px;
+        border-bottom: 1px solid black;
+    }
+
+    .fItem:last-child {
+        border-bottom: none;
+    }
+
+    .fItem img {
+        margin-left: 15px;
+    }
+
+    .fLang {
+        background: rgba(220, 220, 200, 0.15);
+        border-radius: 2px;
+        border: none;
+        color: white;
+        margin-left: 20px;
+        padding: 2px;
+    }
+    .copyright {
+        display: none;
+    }
+    .copyrightMob {
+        text-align: left;
+        display: block;
+        background: rgb(240, 240, 240);
+        font-size: 0.6em;
+        text-align: center;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        padding: 3px;
+    }
+    .copyrightMob a {
+        
+        text-align: left;
+    }
+    .copyrightMob div {
+        margin: 5px;
+        text-align: left;
+    }
+
 }
 
 

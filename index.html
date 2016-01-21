@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comverse</title>
 	<link href="css/index.css" rel='stylesheet' type='text/css'/>
-
 </head>
 <body>
 	<header class="wrap">
@@ -34,12 +33,35 @@
 					
 				</div>			
 			</li>
-		</ul>		
+		</ul>	
+        <div class="HeaderMobile">
+            <label class="hamburger" for="menuForMob"><img src="./source/img/hamburger-icon.png" alt="header menu"></label>
+            <input type="checkbox" id="menuForMob">
+            <img class="comverseLogo center" src="./source/img/comverse-logo.png" alt="Comverse Logo">
+            <label id="srchMob" for="mobileSearch"><img id="buttonRadiusMobile" src="./source/img/searchBtn.png" alt="Search"></label>
+            <input type="checkbox" id="mobileSearch">
+            <div class="searchMobile">
+                <input class="srchInput" type="text" placeholder="Search...">
+            </div>
+            <ul class="mobList">
+                <li class="navListMob">
+                    <a href="">Your Needs</a>
+                </li>
+                <li class="navListMob">
+                    <a href="">Our Portfolio</a>
+                </li>
+                <li class="navListMob">
+                    <a href="">News &amp; Media</a>
+                </li>
+                <li class="navListMob">
+                    <a href="">About Comverse</a>
+                </li>
+            </ul>
+        </div>	
 	</header>
-
 	    <article>
            <main class="my-main">
-               <div class="wrap">
+               <div class="main-wrap">
                     <div class="obolochka">
                         <h2><b>Free</b> Your Markets From<br> IT <b>Complexity</b></h2>
                         <p>Comverse Policy Studio</p>
@@ -83,13 +105,13 @@
                             <p class="robot center">
                                 <img src="./source/img/robot-icon.png" alt="robot">
                             </p>
-                        	<span>Machine to machine</span><span>(M2M)</span>
+                        	<span>Machine to machine (M2M)</span>
                         </a>
                     </li>
                     <li class="box">
                         <a href="">
                             <p class="flag center"></p>
-                        	<span>Over-the-top</span><span>(OTT)</span>
+                        	<span>Over-the-top (OTT)</span>
                         </a>
                     </li>
                     <li class="box">
@@ -111,9 +133,8 @@
                         </a>
                     </li>
                 </ul>
-                <a href="" class="knopka center">See all of our solutions</a>
+                <a href="" class="knopka center length">See all of our solutions</a>
             </section>
-
     <section class="newsAndEvents">
         <div class="wrap">
             <h2 class="newsHeader center">What's happening at comverse?</h2>
@@ -171,8 +192,6 @@
             </div>
         </div>
     </section>
-
-
    <section class="success">
         <div class="wrap">
             <h2 class="successHeader">SUCCESS STORIES</h2>
@@ -236,18 +255,91 @@
                     <li class="atos logo"></li>
                 </ul>
             </div>
-            <button class="knopka2">All 256 Success Stories</button>
-
+             <a href="" class="knopka invisible">See all of our solutions</a>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="wrap">
-            
-        </div>
+        <a href="#" class="knopka center length">All 256 success stories</a>
         
+    </section>
+    </article>
+    <footer>
+        <div class="wrap">
+            <div class="divs">
+                <ul class="footerDiv">
+                    <span class="footerHead">KEY SOLUTIONS</span>
+                    <li><a href="">Monetizing Data</a></li>
+                    <li><a href="">Over the Top (OTT)</a></li>
+                    <li><a href="">Machine to Machine (M2M)</a></li>
+                    <li><a href="">Cloud Computing</a></li>
+                    <li><a href="">Managed Services</a></li>
+                    <li><a href="">Customer Experience Management</a></li>
+                    <li><a href="">Rich Communication Suite (RCS)</a></li>
+                    <li><a href="">Social Media</a></li>
+                    <li><a href="">4G/LTE</a></li>
+                </ul>
+                <ul class="footerDiv">
+                    <span class="footerHead">PRODUCTS &amp; SERVICES</span>
+                    <li><a href="">Billing</a></li>
+                    <li><a href="">VAS</a></li>
+                    <li><a href="">Mobile Internet</a></li>
+                    <li><a href="">Global Services</a></li>
+                    <li><a href="">Training Services</a></li>
+                </ul>
+                <ul class="footerDiv">
+                    <span class="footerHead">COMPANY</span>
+                    <li><a href="">Executive profiles</a></li>
+                    <li><a href="">Clients</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Corporate Responsibility</a></li>
+                    <li><a href="">Industry Involvement</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="posts">
+                <div class="blogs">
+                    <h1>Latest blog posts</h1>
+                    <div class="fDate">
+                        <div class="fDay">18</div>
+                        <div class="fMonth">July</div>
+                    </div>
+                    <div class="fPar">
+                        Comverse Regains Lead in Convergent Charging Market
+                    </div>
+                </div>
+                <div class="sign">
+                    <label for="email"><h1>Subscribe to comverse</h1></label>
+                    <form class="subscribe">
+                        <input type="email"  class="email" placeholder="e-mail..." />
+                        <button class="signUp">SIGN UP</button>
+                    </form>
+                    <ul class="socialList">
+                        <li class="regItem"><a href="index.html"><img class="youtube" src="./source/img/socialMenuIcon-youtube.png" alt="youtube"></a></li>
+                        <li class="regItem"><a href="index.html"><img class="twitter" src="./source/img/socialMenuIcon-twitter.png" alt="twitter"></a></li>
+                        <li class="regItem"><a href="index.html"><img class="linkedin" src="./source/img/socialMenuIcon-linkedin.png" alt="linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerMobile">
+                <ul class="fList">
+                    <li class="fItem">Contact us</li>
+                    <li class="fItem">Subscribe to comverse news</li>
+                    <li class="fItem">Visit us on: 
+                        <img class="youtube" src="./source/img/socialMenuIcon-youtube.png" alt="youtube"> 
+                        <img class="twitter" src="./source/img/socialMenuIcon-twitter.png" alt="twitter"> 
+                        <img class="linkedin" src="./source/img/socialMenuIcon-linkedin.png" alt="linkedin">
+                    </li>
+                    <li class="fItem">Change language:
+                        <select class="fLang">
+                            <option class="black" value="English">English</option>
+                            <option class="black" value="Hebrew">Hebrew</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">Copyright &copy; 2012 Comverse, Inc. | <a href="">Privacy Policy</a></div>
+        </div>
     </footer>
-
-
-    <article>
+    <div class="copyrightMob"><div>Copyright &copy; 2012 Comverse, Inc. | <a href="">Privacy Policy</a> | <a href="">Sitemap</a></div></div>
 </body>
 </html> 
