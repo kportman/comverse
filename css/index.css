@@ -157,6 +157,7 @@ p{
     margin: 0 auto;
     margin-left: 20%;
     /*need to center*/
+    width: 100%;
 }
 .part
 {
@@ -372,15 +373,9 @@ p{
 .skolzit-n{
     display: none;
 }
-.list-parts
-{
-    position: relative;
-    padding: 0;
-    margin: 0 auto;
-    margin-left: 20%;
-}
 .part
 {
+    width: 100%;
     position: relative;
     font-size: 20px;
     font-weight: 300;
@@ -508,7 +503,7 @@ p{
 
 .data-monit:hover
 {
-    content: white url('../source/img/data-monetization-hover.png');
+    content: url('../source/img/data-monetization-hover.png');
     
 }
 .robot
