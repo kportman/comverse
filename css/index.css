@@ -508,12 +508,12 @@ p{
 }
 .robot
 {
-   /* content: url('../source/img/robot-icon.png');*/
+   content: url('../source/img/robot-icon.png');
 }
-.robot img:hover
+.robot:hover
 {
     
-    -webkit-filter: grayscale(0.3) hue-rotate(210deg);;
+    content: url('../source/img/robot-icon-hover.png');
 }
 .flag
 {
@@ -521,16 +521,15 @@ p{
 }
 .flag:hover
 {
-    content: white  url('../source/img/flag-icon.png');
+    content: url('../source/img/flag-icon-hover.png');
 }
 .cloud
 {
     content: url('../source/img/cloud-icon.png');
 }
-}
 .cloud:hover
 {
-    content: white url('../source/img/cloud-icon.png');
+    content: url('../source/img/cloud-icon-hover.png');
 }
 .manage
 {
@@ -538,7 +537,7 @@ p{
 }
 .manage:hover
 {
-    content: white url('../source/img/managed-services.png');
+    content: url('../source/img/managed-services-hover.png');
 }
 .social
 {
@@ -546,7 +545,7 @@ p{
 }
 .social:hover
 {
-    content: white url('../source/img/social-icon.png');
+    content: url('../source/img/social-icon-hover.png');
     color: blue;
 }
 .we-do h2
